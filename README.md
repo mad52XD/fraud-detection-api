@@ -57,19 +57,28 @@ fraud-detection-api/
 
 ## Quick Start
 
-**With Docker:**
+**1. Clone the repository**
+```bash
+git clone https://github.com/mad52XD/fraud-detection-api.git
+cd fraud-detection-api
+```
+
+**2. Run with Docker (recommended)**
 ```bash
 docker build -t fraud-detection-api .
 docker run -d -p 8000:8000 fraud-detection-api
 ```
 
-**Without Docker:**
+**3. Run without Docker**
 ```bash
 pip install -r requirements.txt
 uvicorn api.main:app --reload
 ```
 
-**API Documentation:** http://127.0.0.1:8000/docs
+**4. Open API documentation**
+```
+http://127.0.0.1:8000/docs
+```
 
 ## Example Request
 
